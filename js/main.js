@@ -24,19 +24,19 @@
             } else {
                 $('.fixed-top').removeClass('bg-white shadow');
             }
-        } // else {
-        //     if ($(this).scrollTop() > 50) {
-        //         $('.fixed-top').addClass('bg-white shadow').css('top', 0);
-        //     } else {
-        //         $('.fixed-top').removeClass('bg-white shadow').css('top', -50);
-        //     }
-        // }
+        } else {
+             if ($(this).scrollTop() > 45) {
+                 $('.fixed-top').addClass('bg-white shadow');
+             } else {
+                 $('.fixed-top').removeClass('bg-white shadow');
+            }
+         }
     });
     
     
     // Back to top button
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
